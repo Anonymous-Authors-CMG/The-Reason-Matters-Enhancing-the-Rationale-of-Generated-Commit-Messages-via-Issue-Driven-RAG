@@ -2,3 +2,5 @@ encoder/data/dataset.json filter=lfs diff=lfs merge=lfs -text
 lstm/data/issue_train.csv filter=lfs diff=lfs merge=lfs -text
 *.json filter=lfs diff=lfs merge=lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
