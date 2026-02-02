@@ -1,0 +1,15 @@
+config:
+  batch_size: 128
+  bert_model: bert-base-uncased
+  checkpoint_dir: ./checkpoints
+  class_num: 4
+  dropout: 0.3
+  epochs: 60
+  log_dir: ./logs
+  lr: 0.001
+  max_length: 512
+  rnn_hidden: 768
+  rnn_layer: 2
+  test_data: ./data/test.csv
+  train_data: ./data/train.csv
+  val_data: ./data/dev.csv

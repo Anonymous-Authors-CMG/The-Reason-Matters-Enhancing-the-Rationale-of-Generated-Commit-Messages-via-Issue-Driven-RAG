@@ -1,0 +1,167 @@
+label,message
+1,Loader changes
+3,Don't use IOException APIs not in Gingerbread
+0,Upgrade to Commons Lang3 3.6 <enter>  <enter> Closes gh-9661
+0,Update 'Building reference documentation' section <enter>  <enter> This commit also changes `spring-boot-maven-plugin/pom.xml` to make it <enter> work with `full` Maven profile. <enter>  <enter> Closes gh-11045
+1,Polish
+0,Start building against Spring HATEOAS 1.0.0.M1 snapshots <enter>  <enter> See gh-15939
+2,Fix deprecation warnings in Testcontainers wait strategies <enter>  <enter> See gh-12821
+0,Improve links to Gradle plugin's documentation <enter>  <enter> Closes gh-9386
+3,Reduce logging in Travis
+2,Fix broken test (use web app context)
+0,Change LoggingSystemTests to use real temp folder <enter>  <enter> Update AbstractLoggingSystemTests to use a TemporaryFolder rule. <enter>  <enter> Fixes gh-3349
+0,Typos in Javadocs
+0,Upgrade to gmavenplus-plugin 1.6.1
+0,Upgrade to Neo4j Ogm 3.0.0 <enter>  <enter> Closes gh-10490
+0,Add cache documentation <enter>  <enter> See gh-2633
+0,Optimize checks for java classes in Binder <enter>  <enter> Closes gh-13567
+3,Static HTTPS/SPDY3/HTTP2 server example
+0,Add missing depdendency
+1,Polish
+0,Log warning on slow host resolution <enter>  <enter> Update `StartupInfoLogger` so that if the `InetAddress` call takes <enter> more than 200ms a warning is logged. <enter>  <enter> Closes gh-7087
+0,Upgrade to maven-compiler-plugin 3.6.1 <enter>  <enter> Closes gh-9620
+0,Prevent authenticated principal from clashing with argument of same name <enter>  <enter> Closes gh-11988
+0,Upgrade to Spring Integration 4.2.0.M2 <enter>  <enter> Closes gh-3286
+0,Update HikariCP version to latest.
+3,Added description and download info for MockWebServer.
+0,Add XMLUnit to spring-boot-starter-test <enter>  <enter> Closes gh-9709
+3,Only exclude Javadoc from 'internal' package in the main artifact.
+0,Upgrade to Byte Buddy 1.7.8 <enter>  <enter> Closes gh-10786
+0,Add README to cli
+3,Update to the latest DiskLruCache. <enter>  <enter> Includes everything thru 8842981cbcfe20eb4721c0a2c867fa9a18233062
+0,"Align test with Spring MVC's internals once again <enter>  <enter> The internals have been updated so that the field that was originally <enter> used, interceptors, can be used again. <enter>  <enter> This reverts commit 2a1bca6806a696dadf7f470086e21d55f66ac953."
+3,Rebuild Javadoc <enter>  <enter> git-svn-id: https://mockwebserver.googlecode.com/svn/trunk@19 cf848351-439f-e86a-257f-67fa721851d5
+2,Polish <enter>  <enter> Closes gh-9103
+0,Add a missing 'io.spring.dependency-management' in doc <enter>  <enter> Closes gh-9352
+3,Remove non-existent starter from dependencies pom
+0,Polish 'Add configuration property for Spring Kafka's missingTopicsFatal' <enter>  <enter> Closes gh-16740
+2,Packaging: ensure executable bit is set
+2,Fix freeMarker->freemarker
+0,Start building against snapshots for Spring Kafka 2.0.0.RELEASE <enter>  <enter> See gh-10328
+3,Revert '[maven-release-plugin] prepare release parent-1.2' <enter>  <enter> This reverts commit ad928c668de84199f277f083627a262485a987d1.
+0,Add reference to migration guide <enter>  <enter> Closes gh-11302
+0,Upgrade to Ehcache3 3.7.0 <enter>  <enter> Closes gh-16146
+3,Revert 'Consistent casing of 'SSL' in method names.' <enter>  <enter> This reverts commit ea4297ded736c5b606a772fef9d0d7929697e159.
+0,Polish 'Auto-detect jOOQ dialect' <enter>  <enter> Closes gh-9355
+0,Upgrade to Rxjava2 2.0.6 <enter>  <enter> Closes gh-8378
+0,Remove dependency management for `hibernate-entitymanager` <enter>  <enter> Closes gh-8433
+0,Upgrade to Maven Enforcer Plugin 3.0.0-M2 <enter>  <enter> Closes gh-13646
+2,Polish <enter>  <enter> Closes gh-7561
+0,"Add Atomikos support classes <enter>  <enter> Add support classes for the Atomikos JTA library, including: <enter>  <enter> - A Spring friendly ConnectionFactoryBean and DataSourceBean. <enter> - A PostProcessor to apply 'depends-on' ordering automatically. <enter> - A bindable properties class for type-safe configuration. <enter>  <enter> See gh-947"
+0,Align with Spring Framework 5's new Commons Logging adapter <enter>  <enter> Closes gh-8825
+3,Teach MockWebServer SPDY. <enter>  <enter> Kill MockSpdyServer in the process.
+0,Support reactive web servers with LocalServerPort <enter>  <enter> This commit refactors the `EmbeddedWebServerInitializedEvent` hierarchy <enter> to have one specialized event for Servlet based apps and another one for <enter> reactive apps. <enter>  <enter> Each event implementation has: <enter>  <enter> * a specific `ApplicationContext` implementation for the app <enter> * a custom `getServerId` implementation that differentiates the <enter> application server from the management server <enter>  <enter> Closes gh-8348
+0,"Remove duplicate resources from classpath <enter>  <enter> We had been making a special case for logback.xml anyway, so <enter> extending that to simply deleting recursively all of <enter> src/main/resources (or equivalent) from target/classes (or <enter> equivalent) seems like it's perfectly justifiable. <enter>  <enter> Fixes gh-451"
+0,Upgrade to Spring Restdocs 1.2.2.RELEASE <enter>  <enter> Closes gh-10492
+3,Support more than 64 referenced headers in HPACK.
+0,Polish contribution
+0,Add support for Restarting applications <enter>  <enter> Add Restarter class that can be used to restart a running application <enter> when underlying class files change. The Restarter is automatically <enter> initialized via a ApplicationListener and automatically detects <enter> classpath URLs that are likely to change (when not running from a fat <enter> jar). <enter>  <enter> See gh-3084
+3,Mechanically change OkHttp to Square's Java style.
+3,Add Javadoc <enter>  <enter> git-svn-id: https://mockwebserver.googlecode.com/svn/trunk@5 cf848351-439f-e86a-257f-67fa721851d5
+0,Rename redis starter to spring-boot-starter-data-redis <enter>  <enter> Closes gh-1033
+0,Move spring.mvc.media-types to content-negotiation <enter>  <enter> This commit moves 'spring.mvc.media-types' to the <enter> 'spring.mvc.content-negotiation.*' namespaces introduced in gh-11105. <enter>  <enter> Closes gh-11636
+0,"Improve diagnostics when OnBeanCondition type deduction fails <enter>  <enter> When @ConditionalOnBean or @ConditionalOnMissingBean are used on a <enter> @Bean method, they will, in the absence of any other configuration, <enter> attempt to deduce the bean's type by examining the method's return <enter> type. This deduction can fail. See gh-4841, gh-4934, and gh-5624 <enter> for some examples of possible failure causes. Previously, this <enter> failure was only logged as a debug message leaving the user with a <enter> misleading message suggesting that the @ConditionalOnBean or <enter> @ConditionalOnMissingBean annotation was not configured correctly. <enter>  <enter> This commit improves the diagnostics by mention the possibility of <enter> type deduction in the exception message and including the exception <enter> that caused deduction to fail as the cause. <enter>  <enter> Closes gh-4934"
+3,Add current AOSP class name for OpenSSLSocketImpl <enter>  <enter> AOSP moved OpenSSLSocketImpl to com.android.org.conscrypt.* so add that <enter> as the first choice for unbundled apps. <enter>  <enter> Change-Id: I7bad6533dcb86ee1cac3b15f42dd386bd651eaed
+0,Upgrade to Surefire 2.18.1 <enter>  <enter> Closes gh-2963
+0,Remove unfixable FIXME
+2,Fix failing test
+0,Fix missing trailing / in resource paths
+0,Upgrade to Infinispan 9.1.5.Final <enter>  <enter> Closes gh-12051
+1,Polish
+3,Implement moving bytes between OkBuffers. <enter>  <enter> This is more complicated than I'd anticipated.
+0,"Remove spring-data-commons <enter>  <enter> Remove direct reference to spring-data-commons, instead favoring <enter> transitive dependency. <enter>  <enter> Fixes gh-557"
+3,Flush control frames; don't flush user frames.
+2,Fix exec-maven-plugin configuration issue <enter>  <enter> fixes #133
+0,Add sessionTimeout to embedded servlet containers <enter>  <enter> * ConfigurableEmbeddedServletContainerFactory now has a sessionTimeout <enter> property <enter> * The ServerProperties in Actuator supports it <enter>  <enter> [Fixes #53667353] [bs-243] Support setSessionTimeout
+0,Don't fail build on duplicate module-info classes <enter>  <enter> Update the duplicate-finder-maven-plugin configuration to ignore <enter> module-info classes. <enter>  <enter> Closes gh-13403
+0,Add byte-buddy managed dependency <enter>  <enter> Add a managed dependency for byte-buddy since Mockito needs 1.6 and <enter> Hibernate pulls in 1.5. <enter>  <enter> See gh-7770
+0,Fix CacheType outer class tangle <enter>  <enter> Fixes gh-3168
+0,Upgrade to Selenium 3.141.59 <enter>  <enter> Closes gh-15526
+3,Add systemProperties to run task in sample
+0,Suppress Neo4J-related deprecation warnings <enter>  <enter> See gh-6976
+0,Apply micrometer MeterFilter beans automatically <enter>  <enter> Update `MeterRegistryPostProcessor` and `MetricsAutoConfiguration` so <enter> that micrometer `MeterFilter` beans are automatically applied. <enter>  <enter> Fixes gh-11843
+3,Add MockWebServer.setNpnProtocols
+0,Drop back to Surefire 2.19.1 as 2.19.2 was rebranded as 2.20
+0,Fix build failure <enter>  <enter> More change to use the http Neo4j driver <enter>  <enter> See https://github.com/neo4j/neo4j-java-driver/issues/380 <enter>  <enter> Closes gh-9499
+0,Use JSONObject.putOpt in JsonConverter <enter>  <enter> Closes gh-15595
+3,Migrate ConditionalOnMissingBeanTests to context runner
+0,"Mention that Lettuce requires commons-pool2 <enter>  <enter> We intend to remove this limitation in a future milestone but as the <enter> Lettuce auto-configuration requires `commons-pool2`, this commit updates <enter> the How-To to mention that. <enter>  <enter> See gh-9091"
+2,Fix package name for boot-loader-tools <enter>  <enter> Issue: #53129653
+3,Make fields private where possible
+3,Support querying & setting transport lists on connections. <enter>  <enter> The list is specified via a magic request property <enter> 'X-Android-Transports' and can be queried via the request <enter> property 'X-Android-Selected-Transport'. <enter>  <enter> System wide defaults / switches don't need any changes <enter> to okhttp. They can be set as options on the OkHttpClient <enter> used by the platform UrlStreamHandlers.
+0,Add support for additional Kafka listener properties <enter>  <enter> See gh-11502
+3,Backfill spdy and http/2 related tests wrt zero-length messages.
+0,Upgrade to Reactor Bismuth-SR1 <enter>  <enter> Closes gh-10679
+0,"Changes to applications poms: <enter>  <enter> * Suport maven-exec-plugin in the same way as the shade plugin, so <enter>         $ mvn exec:java <enter>     is all you need to do to run an app <enter> * Update README <enter> * Fix dependencies to nail Spring version"
+0,Align default scopes for Google with changes in Spring Security 5.0.1 <enter>  <enter> Closes gh-11573
+2,Fix meta-data for spring.devtools.remote <enter>  <enter> See gh-3086
+2,Fix checkstyle errors
+3,Dependency-free examples for the OkHttp front page. <enter>  <enter> I'm going to include code snippets from these.
+0,"Add mainClassName to springBoot DSL in Gradle plugin <enter>  <enter> This commit introduces a new mainClassName property on the springBoot <enter> DSL provided by the Gradle plugin. It can be used to explicitly <enter> configure the mainClassName of the default bootRun, bootJar, and <enter> bootWar tasks in a single place. Previously, the only mechanism <enter> provided to do so was the mainClassName property that's only available <enter> when the application plugin has been applied. <enter>  <enter> Closes gh-10623"
+3,Polish spring-boot-loader-tools <enter>  <enter> Issue: #53129653
+3,"Extract Mongo auto-configuration from Spring Data <enter>  <enter> Extract Mongo auto-configuration classes from Spring Data specific <enter> auto-configuration, allowing Mongo to be used without Spring Data <enter> if require."
+2,Fix tests failing on Windows
+0,"Polish pom.xml <enter>  <enter> Aplly consistent formatting, drop JDK 8 support and cleanup repo <enter> locations to use spring.io."
+0,Align SessionsEndpoint with Spring Session API improvements <enter>  <enter> This commit aligns SessionsEndpoint with <enter> FindByIndexNameSessionRepository API improvements that simplifies <enter> retrieval of sessions by principal name. <enter>  <enter> Closes gh-14124
+2,Fix broken build
+0,Polish 'Update documentation to reference webjars-locator-core' <enter>  <enter> Closes gh-12135
+3,Polish stream creation in some PropertySources <enter>  <enter> Closes gh-13343
+0,Auto configure micrometer cache metrics <enter>  <enter> Closes gh-11221
+0,Add AssertJ checkstyle rule <enter>  <enter> Closes gh-5083
+0,"Revisit InfluxDB configuration structure <enter>  <enter> This commit removes the `client` namespace for InfluxDB as the <enter> component that is created is `InfluxDB`, not `InfluxDBClient` or <enter> something. <enter>  <enter> This aligns with all the other url/user/password properties Spring <enter> Boot provides already <enter>  <enter> See gh-9066"
+0,Upgrade to Influxdb Java 2.7 <enter>  <enter> Closes gh-9663
+0,Move 'testdb' naming to DataSourceProperties <enter>  <enter> Move the 'testdb' naming logic to `DataSourceProperties` and expose <enter> the `deduceDatabaseName` method so they can be used in <enter> auto-configuration. <enter>  <enter> See gh-11719
+0,Upgrade to Joda-Time 2.7 <enter>  <enter> Closes gh-2153
+0,"Register an AuthenticationManager in security autoconfig <enter>  <enter> This is quite a big step, but I think it helps a lot. Since Spring <enter> Boot always creates an AuthenticationManager if it doesn't find one <enter> already registered, it makes sense to also make it into a @Bean. <enter> Spring Security does not register its AuthenticationManager by <enter> default though, so we have to do that for it if the user has created <enter> one with an @Autowired AuthenticationManagerBuilder, but not registered <enter> it as a @Bean. <enter>  <enter> Having the @Bean (marked @Primary to prevent issues with @Autowired) <enter> makes it easier to reason about what Spring Boot has done for you, and <enter> easier to default in simple use cases to the boot-created <enter> AuthenticationManager. For example, if I want an OAuth2 Authorization <enter> Server with password grant, it makes total sense for the <enter> AuthenticationManager for users to be the same as the @Primary one. <enter> Now it is easy to set that up (just @Autowire it)."
+0,Polish doc <enter>  <enter> Closes gh-11529
+0,[bs-107] Remove 'z' suffix from management endpoints <enter>  <enter> * /varz->/metrics <enter> * /healthz->/health <enter> * all actuator endpoints are now in a subpackage <enter>  <enter> [Fixes #49496887]
+3,Read priority flag on http/2 headers frame.
+2,Allow binding number to DataSize <enter>  <enter> Closes gh-14294
+0,"Publish artifacts and, when Maven plugin used, customize upload task <enter>  <enter> See gh-1666"
+0,Polish 'Allow customization of MongoClientSettings.Builder' <enter>  <enter> Closes gh-9341
+3,"Restore tests for response caching + TLS. <enter>  <enter> One of the test cases bitrotted to failure as a consequence <enter> of the HTTP route selector change. I stopped assigning the <enter> socket, which it needed to cache the TLS metadata. This is <enter> fixed."
+3,Handle incoming SETTINGS frames in SPDY.
+0,Change default for new_generator_mappings to true <enter>  <enter> Closes gh-7612
+0,Remove outdated key <enter>  <enter> The `spring.metrics.export.redis.aggregate-key-pattern` is no longer <enter> defined but was still referenced in the documentation.
+3,Add messagecode resolver format based on application property
+2,Fix merge conflict <enter>  <enter> Closes gh-11969
+0,Remove undefined FILE appender from basic log4j config <enter>  <enter> Fixes gh-433
+0,Add test for nested properties
+3,Upgrade from ant to maven. <enter>  <enter> git-svn-id: https://mockwebserver.googlecode.com/svn/trunk@12 cf848351-439f-e86a-257f-67fa721851d5
+0,Update documentation for new HealthIndicator support
+0,Add dependency management for org.hibernate:hibernate-spatial <enter>  <enter> Closes gh-9950
+3,Update website to the latest design.
+3,"Introduce a Policy interface between engine and connection. <enter>  <enter> This breaks the direct dependency from HttpEngine to <enter> HttpURLConnectionImpl. With this dependency broken, we <enter> can start to use HttpEngine directly from Dispatcher and <enter> Job."
+3,Polishing <enter>  <enter>  - Code formatting <enter>  - Javadoc warnings <enter>  - Deprecation warnings
+0,"When pool autocommit is disabled, inform Hibernate <enter>  <enter> Starting with Hibernate 5.2.10, the JPA property <enter> `hibernate.connection.provider_disables_autocommit` should be set to true <enter> when the datasource has autocommit disabled in order to improve <enter> performance. <enter>  <enter> See gh-9737"
+0,Upgrade to Spring Session Data MongoDB 5.0.0.RC2 <enter>  <enter> Closes gh-11083
+2,Do not attempt to restart non-restartable jobs <enter>  <enter> Closes gh-3830
+0,Rename spring.cache.control to spring.cache.cachecontrol <enter>  <enter> Closes #11090
+3,Add SpringApplicationErrorHandler <enter>  <enter> [#48055575] [bs-31] Add hooks for failed application context startup
+0,Remove multi config runApplication extension <enter>  <enter> Closes gh-10511
+0,No-op ResetMocksTestExecutionListener when Mockito is not present <enter>  <enter> Closes gh-11508
+0,Upgrade to Rxjava 1.2.10 <enter>  <enter> Closes gh-9061
+0,Fix typo 'a' -> 'an'
+0,Add default order for JobLauncherCommandLineRunner <enter>  <enter> Closes gh-2943
+3,Append context id to objectName of Endpoint MBeans if name already exists in MBeanServer
+3,Small docs fixes. Remove OkHttp 2 warnings.
+0,Remove maven-eclipse-plugin as it has been retired <enter>  <enter> Closes gh-13631
+3,Add initializer support <enter>  <enter> Add `ApplicationContextInitializer` support to <enter> `ApplicationContextRunner`.
+0,Improve WebSocket documentation for reactive applications <enter>  <enter> Closes gh-14069
+0,Clean up logging dependencies and exclusions <enter>  <enter> Closes gh-11148
+3,Correct checkstyle.
+3,Platform.getMtu is unused. <enter>  <enter> This was a failed experiment.
+3,Backport build script updates
+1,Polish
+1,Polish
+2,Fix test
+0,Drop ignoreNestedProperties attribute from @ConfigurationProperties <enter>  <enter> Closes gh-8657
+0,"Improve Spring Session sample <enter>  <enter> This commit improves the Spring Session sample by providing multiple <enter> build profiles that make it possible to easily try out different session <enter> stores. By default, JDBC session store backed by an in-memory embedded H2 <enter> database is used. <enter>  <enter> See gh-10351"
+2,Polish <enter>  <enter> Closes gh-8879
+3,Improve Spring Session MongoDB support naming
+0,Add ServletRegistrationBean for DispatcherServlet <enter>  <enter> Mapping is exposed via server.servletPath. <enter>  <enter> Fixes gh-379
+0,Upgrade to Artemis 2.3.0 <enter>  <enter> Closes gh-10405
+2,Fix VanillaHealthIndicator javadoc
+0,Stop MeterRegistries when context is closed <enter>  <enter> Closes gh-12006
+0,Align with API changes in latest Spring Data Kay snapshots <enter>  <enter> See gh-7461
+1,Polish
