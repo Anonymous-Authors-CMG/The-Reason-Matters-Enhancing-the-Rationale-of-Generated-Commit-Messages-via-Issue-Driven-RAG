@@ -1,0 +1,20 @@
+# --- Python 通用 ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- 忽略所有层级下的这些文件夹 (加上 **/ 最保险) ---
+**/checkpoints/
+**/lightning_logs/
+**/logs/
+**/fine-tuned-model/
+
+# --- macOS ---
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- IDE ---
+.idea/
+.vscode/
