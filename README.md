@@ -44,9 +44,12 @@ Scripts for collecting new data from GitHub or reproducing the dataset.
 
 #### 1.2 `data/eval/` - Evaluation Dataset
 
-Sampled data based on statistical working hours:
+Sampling data based on statistical formulas:
 - `dl390.json`: Deep Learning frameworks (PyTorch, TensorFlow, Keras) - 390 samples
 - `mq450.json`: Message Queue frameworks (Kafka, RocketMQ, Pulsar) - 450 samples
+
+
+> Evaluation Framework：[CMEval](https://github.com/0x404/awesome-git-commit), see more at [Evaluating Generated Commit Messages with Large Language Models](https://arxiv.org/abs/2507.10906)
 
 #### 1.3 `data/issue/` - Issue Data
 
@@ -70,7 +73,7 @@ Preprocessed data files ready for model input.
 
 ### 2. `model/` - Models Directory
 
-Contains all models used in our research.
+Contains all models used in our research. Hyperparameters settings can be seen at [utils.config](utils/config.py).
 
 #### 2.1 `model/TransR.py` - Graph Embedding Model
 
